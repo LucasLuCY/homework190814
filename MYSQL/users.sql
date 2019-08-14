@@ -44,10 +44,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'lucas', 'jking@fakemail.com', NULL, '$2y$10$mSGdjpb9a0s3nBW66uucFOcT2OUFjJzsBJ8YaONWby9/fSgnzFpyW', 'yYHC4RnFP7ev0qaG4e9edZwQRPYI3uoe7pBeaT5zPqHDnQhgJqA0h7SATNh0', '2019-08-13 17:55:50', '2019-08-13 17:55:50'),
-(2, 'James', 'jking@fakemail.com1', NULL, '$2y$10$NwugP9PAi6.Dst3DVjcfXuoKqun9wSvLRCEI.FSkxUkP5qnZZyrG6', 'WxTVYVoo1NBHI9mMp5dgKNqtSFgr1pvyQFcjHQavTTan3lnOd6qBur0aaTaj', '2019-08-13 18:42:37', '2019-08-13 18:42:37'),
+(1, 'lucas', 'jking@fakemail.com', NULL, '$2y$10$mSGdjpb9a0s3nBW66uucFOcT2OUFjJzsBJ8YaONWby9/fSgnzFpyW', 'KPyEZjMnvhSUgliMGacD2KcPGMfeReYFtX626cuYJK9561q19pZVtHOhOIy5', '2019-08-13 17:55:50', '2019-08-13 17:55:50'),
+(2, 'James', 'jking@fakemail.com1', NULL, '$2y$10$NwugP9PAi6.Dst3DVjcfXuoKqun9wSvLRCEI.FSkxUkP5qnZZyrG6', '32c0vGgxhss0Nh448j1nkBf4l3YRKtqtR8fp49ua9Mx7oQpMSGcDcnjBO54H', '2019-08-13 18:42:37', '2019-08-13 18:42:37'),
 (3, 'Maho', 'jking@fakemail.com2', NULL, '$2y$10$0f.IgO0g8UlqDn9n9yKweeuWkc82HYIif5tXUOaLr75eU.jkVIrx.', NULL, '2019-08-13 18:43:34', '2019-08-13 18:43:34'),
-(4, 'Tang', 'jking@fakemail.com3', NULL, '$2y$10$0iJrenCpKi4ClP84j.M./uY4WXPolULqcJFPvpsYkmABIZsujqmD6', NULL, '2019-08-13 18:44:02', '2019-08-13 18:44:02');
+(4, 'Tang', 'jking@fakemail.com3', NULL, '$2y$10$0iJrenCpKi4ClP84j.M./uY4WXPolULqcJFPvpsYkmABIZsujqmD6', NULL, '2019-08-13 18:44:02', '2019-08-13 18:44:02'),
+(5, 'root', 'root@root.com', NULL, '$2y$10$e3kUwyrCQNeD4rFLXgJ4SufJEMdEghQ.1xndTodBxT5khEeJljR5i', 'JMMKlUjfnSpyTfWHEy8nBpnHPIFyE3VQBz1msDDklPrnZYHUHCBEx0hkSk3G', '2019-08-14 00:48:35', '2019-08-14 00:48:35'),
+(6, 'jessie', 'jessie@yes.com', NULL, '$2y$10$Tm7zp6aD/KAV2dAWFHLsEOvmGLik1LySTYvDWEuwGlO3a62gmOwbu', NULL, '2019-08-14 00:46:46', '2019-08-14 00:46:46');
 
 --
 -- 已傾印資料表的索引
@@ -68,7 +70,7 @@ ALTER TABLE `users`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

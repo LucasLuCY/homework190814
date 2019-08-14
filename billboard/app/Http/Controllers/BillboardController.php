@@ -17,8 +17,14 @@ class BillboardController extends Controller
 
     public function index()
     {
-        $Billboard = Billboard::with('User')->get();
-        
+       
+        $userId = Auth::id();
+        if($userId == 5){
+            $Billboard = Billboard::with('User')->get();
+        }else{
+            $Billboard = Billboard::with('User')->where('userId', $userId)->get();
+        }
+     
         return view('billboard.index', compact('Billboard'));
     }
 
@@ -46,7 +52,7 @@ class BillboardController extends Controller
         $Billboard->content = $request->content;
         $Billboard->userId = Auth::id();
         $Billboard->save();
-         return redirect('/billboard');
+        return redirect('/billboard');
     }
 
     /**
