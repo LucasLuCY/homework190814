@@ -12,7 +12,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">心情點滴</h1>
-        <p class="lead">將美好的時光將化為文字留在這分享的盒子裡。</p>
+        <p class="lead">將美好的時光化為文字，留在這分享的盒子裡。</p>
     </div>
 </div>
 
